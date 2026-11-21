@@ -1,6 +1,5 @@
 # JacobiPy
 
-[![Tests](https://github.com/Goncalo-math/jacobipy/actions/workflows/tests.yml/badge.svg)](https://github.com/Goncalo-math/jacobipy/actions/workflows/tests.yml)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
