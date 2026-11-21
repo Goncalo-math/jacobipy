@@ -1,0 +1,4 @@
+# Normalise line endings (the repo was started on Windows)
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
