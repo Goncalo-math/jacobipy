@@ -273,8 +273,9 @@ class jacobi:
             True if C is a Casimir function, False otherwise.
         """
         CC = sp.sympify(C)
-        X_C = self.hamiltonian_vf(CC).applyfunc(sp.simplify)
-        return bool(X_C.is_zero_matrix) and sp.simplify(self.sharp_E(CC)) == 0
+        dC = sp.Matrix([sp.diff(CC, v) for v in self.coords])
+        lam = self.sharp_Lambda(dC).applyfunc(sp.simplify)
+        return lam.is_zero_matrix is True and sp.simplify(self.sharp_E(C)) == 0
 
     def poissonization(self, t=None):
         """
