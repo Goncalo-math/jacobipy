@@ -140,12 +140,7 @@ If a check fails you can ask why:
 | `jacobi_Lotka_Volterra(a, d, f, Gamma=0)` | Jacobi structure of Lotka–Volterra type on ℝ² |
 | `jacobi_Rigid_Body(a, d)` | Jacobi structure of rigid body type on ℝ³ (`a₁+a₂+a₃ = 0`) |
 
-## Running the tests
 
-```bash
-pip install -e ".[dev]"
-pytest
-```
 
 ## Bugs & contributions
 
